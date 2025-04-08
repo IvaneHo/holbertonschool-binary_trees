@@ -5,9 +5,9 @@
  * @tree: Pointer to the root node of the tree to traverse
  * @func: Pointer to a function to call for each node
  *
- * Description: This function visits each node in a binary tree
- * using the post-order traversal method (Left, Right, Node),
- * and applies the provided function to each node's value.
+ * Description: This function visits each node in a binary tree using the
+ * post-order traversal method (Left, Right, Node), and applies the provided
+ * function to each node's value.
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
