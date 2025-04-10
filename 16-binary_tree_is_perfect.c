@@ -19,14 +19,15 @@ static int depth(const binary_tree_t *tree)
 }
 
 /**
- * is_perfect_recursive - Helper function to check perfection
- * @tree: Pointer to current node
- * @level: Current level
- * @leaf_depth: Expected depth for all leaves
+ * is_perfect_recursive - Checks if a binary tree is perfect recursively
+ * @tree: Pointer to the current node
+ * @level: Current level in the tree
+ * @leaf_depth: Expected depth for all leaf nodes
  *
  * Return: 1 if perfect, 0 otherwise
  */
-static int is_perfect_recursive(const binary_tree_t *tree, int level, int leaf_depth)
+static int is_perfect_recursive(const binary_tree_t *tree,
+				int level, int leaf_depth)
 {
 	if (tree == NULL)
 		return (1);
@@ -45,9 +46,9 @@ static int is_perfect_recursive(const binary_tree_t *tree, int level, int leaf_d
 
 /**
  * binary_tree_is_perfect - Checks if a binary tree is perfect
- * @tree: Pointer to the root node
+ * @tree: Pointer to the root node of the tree
  *
- * Return: 1 if perfect, 0 otherwise
+ * Return: 1 if the tree is perfect, 0 otherwise
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
